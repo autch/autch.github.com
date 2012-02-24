@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* NON-SPECIALIZED STYLES */
+
+body { margin: 0px; color: #000; background: #fff; }
+img { border: 0; }
+dt { font-weight: bold; }
+table { border-collapse: collapse; }
+table td { padding: 0px; vertical-align: top; }
+th { background: #3f3f3f; color: #fff; padding: 5px; vertical-align: middle; }
+th a{ color: #fff; }
+a { color: #003366; font-weight: bold; }
+a:hover { color: #933; }
+
+h1 { margin-top: 0px; font-size: 166%; text-align: center; float: none; }
+h2 { border: 2px solid black; border-right: none; border-top: none; padding: 0 2px 2px; font-size: 133%; }
+h3 { border-bottom: 2px solid black; padding: 0px 2px; text-align: left; white-space: nowrap; font-size: 110%; }
+h4 { border-bottom: thin dashed black; padding-bottom: 2px; }
+h5 { }
+h6 { }
+
+pre { color: inherit; line-height: 1em; border: dashed thin black; padding: 4px; margin-left: 2%; font-size: 10pt; }
+
+#headerlogo { background: #fff; padding: 10px 25px 10px; vertical-align: middle; }
+#headerbar { border-bottom: 3px solid #ccc; background: #666; width: 100%; height: 10px; font-size: 8px; line-height: 100%; }
+#headerbar a { color: #666; }
+
+/* 左ブロックの定義 */
+#leftcolumn { width: 170px; background: #f6f6f6; float: left; margin-right: 4px; }
+#leftcolumn div.blockTitle { padding:2px 0px 2px 22px; color:#fff; font-weight:bold; background: #949494 url(images/menu_bgL.gif) no-repeat; border-bottom:3px solid #ccc; vertical-align: middle; }
+#leftcolumn div.blockContent { margin-bottom: 8px; padding:5px 10px; line-height:130%; }
+/* 中央ブロックの定義 */
+#centercolumn { padding:0px 10px; margin-left: 170px; }
+/* フッタブロックの定義 */
+#footerbar { border-top:1px dotted #999; text-align:center; padding:10px; clear: both; font-size: 80%; margin-top: 1em; }
+
+div.main_body { margin: 0px 25px 0px 25px; }
+div.title { background: #3f3f3f; color: #fff; padding: 2px; vertical-align: middle; font-weight: bold; }
+div.title a { color:#fff; }
+
+/* フォーラムなどの投稿情報欄 */
+.head { background: #ccc; padding: 5px; font-weight: bold; }
+.head a { color: #333; }
+
+/* フォーラムなどの交互に色が変わる部分 */
+.even { background:#eee; padding:5px; }
+.odd { background:#f9f9f9; padding:5px; }
+
+tr.even td { background:#eee; padding:5px; }
+tr.odd td { background:#f9f9f9; padding:5px; }
+
+span.title { font-size: 200%; font-variant: small-caps; }
+
+/* AJAX RSS - Antenna */
+div.antennasection { font-size: 80%; margin: 0; line-height: 125%; }
+div.antennaitem { margin-bottom: 8px; }
+
+/* AJAX RSS - others */
+div.rssitem { font-size: 80%; line-height: 120%; padding: 2px 0px 4px; }
+div.rssitem div.rsstitle { font-weight: bold; padding: 2px 0px; }
+
+td.size { text-align: right; }
+
+div.menu div a { font-weight: bold; }
+div.menu div.menudesc { font-size: 80%; line-height: 120%; margin-bottom: 8px; }
+
+dl.feeds { font-size: 80%; line-height: 110%; }
+dl.feeds dt { margin: 4px 0 2px; }
+dl.feeds dd { margin: 2px 0 8px 1em; }
+
+dl.projects{ font-size: 80%; line-height: 110%; }
+dl.projects div.title { background-color: inherit; color: inherit; }
+dl.projects div.title a { color: inherit; }

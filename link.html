@@ -1,0 +1,11 @@
+---
+layout: default
+title: リンク
+---
+{% for category in site.links %}
+<div class="title">{{ category.title | escape }}</div>
+<dl>
+{% for item in category.items %}<dt><a href="{{ item.href | escape }}">{{ item.title | escape }}</a></dt>
+{% endfor %}
+</dl>
+{% endfor %}

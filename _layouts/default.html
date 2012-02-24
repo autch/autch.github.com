@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+  <head profile="http://purl.org/net/ns/metaprof">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-style-type" content="text/css; charset=UTF-8" />
+    <meta http-equiv="content-script-type" content="text/javascript; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/common.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/load-rss.js"></script>
+    <script type="text/javascript">
+      jQuery(function() {
+        initialize_antenna_feeds();
+{% if page.is_index %}
+        initialize_diary_feeds();
+        initialize_github_feeds();
+{% endif %}
+      });
+    </script>
+    <title>{{ page.title }}{% if page.is_index == FALSE %} - Autch.net{% endif %}</title>
+    <meta name="verify-v1" content="BWhzjA8nEsWQLbCJALML2WbZ1mbW7VK09zPdsveIgUY=" />
+  </head>
+<body>
+<div id="headerbar" style="background-image: url("/images/dot.gif");"><a href="/index.m.html">iPhone 版</a></div>
+
+<div id="headerlogo">
+  <span class="title"><a href="/index.html"><img src="/images/Autch.net.png" alt="Autch.net" width="160" height="32"/></a></span>
+</div>
+
+<!-- メイン部分の定義 -->
+<div class="main_body">
+<!-- 左ブロック部分の定義 -->
+<div id="leftcolumn" valign="top">
+  <div class="blockTitle">メニュー</div>
+  <div class="blockContent">{% include menu.tpl %}</div>
+  <div class="blockTitle">アンテナ</div>
+  <div class="blockContent">
+    <div class="antennasection">
+      <div id="antennasection">
+	アンテナを読み込んでいます…
+      </div>
+      <br />
+      <div style="font-weight: bold;">
+	<a href="http://a.hatena.ne.jp/autch/">もっと見る＠はてなアンテナ</a></div>
+    </div>
+  </div>
+</div>
+<div id="centercolumn" valign="top">
+
+{% if page.is_index == FALSE %}
+<h1>{{ page.title | escape }}</h1>
+{% endif %}
+
+{{ content }}
+
+</div>
+<div id="footerbar">
+転載・引用・リンク・アンリンク自由。一切のコンテンツは無保証。<br />
+Copyright &copy; 2000, 2012, Autch.net.
+&quot;gray_forest&quot; theme designed by <a href="http://hello.oceannet.jp/">OCEAN-NET</a>.
+</div>
+</body>
+</html>
+

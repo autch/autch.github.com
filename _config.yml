@@ -1,0 +1,38 @@
+# -*- coding: utf-8-unix; -*-
+
+links:
+
+  - title: 知り合い
+    items:
+      - title: Moomoo-ya.com
+        href: http://www.moomoo-ya.com/
+      - title: D-STONE
+        href: http://hp.kutikomi.net/rady/
+      - title: Kobarin のホームページ
+        href: http://hwm5.gyao.ne.jp/kobarin/
+      - title: 404 NOT FOUND
+        href: http://www.ne.jp/asahi/etc/qed/
+      - title: GEOCORD
+        href: http://www.geocities.jp/koh_zuki/
+      - title: そうだ、弓を撃とう！
+        href: http://cucumroll.blog49.fc2.com/
+      - title: 六本木 Web
+        href: http://ropo.jp/
+      - title: 気ままに暇つぶし
+        href: http://www.kimahima.com/
+      - title: GLANZA V のページ（まだ仮称）
+        href: http://www.ep91.net/
+      - title: すぺふんのドラログ
+        href: http://ryumanix.net/blog/
+
+  - title: その他
+    items:
+      - title: Weathernews
+        href: http://weathernews.jp/
+      - title: 気象庁
+        href: http://www.jma.go.jp/jma/index.html
+      - title: 医薬品医療機器情報提供ホームページ
+        href: http://www.info.pmda.go.jp/
+      - title: 渡航安全 HP
+        href: http://www.anzen.mofa.go.jp/
+ 
