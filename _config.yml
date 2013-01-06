@@ -1,7 +1,8 @@
 # -*- coding: utf-8-unix; -*-
 
-links:
+url_prefix: http://mizuho.autch.net/www/
 
+links:
   - title: 知り合い
     items:
       - title: Moomoo-ya.com
@@ -24,7 +25,6 @@ links:
         href: http://www.ep91.net/
       - title: すぺふんのドラログ
         href: http://ryumanix.net/blog/
-
   - title: その他
     items:
       - title: Weathernews

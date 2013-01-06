@@ -24,7 +24,9 @@ YQL = {
 	this.get_timeline('rss', url, 'date', limit, function(results) { on_ready(results.item) });
     },
     get_atom: function(url, limit, on_ready) {
-	this.get_timeline('atom', url, 'updated', limit, function(results) { on_ready(results.entry) });
+	this.get_timeline('atom', url, 'updated', limit, function(results) { 
+	    on_ready(results.entry)
+	});
     },
 }
 
@@ -71,6 +73,7 @@ function initialize_github_feeds()
 	    var dd = jQuery("<dd>").append(entry.content.content);
 	    var a = jQuery("<a>").text(entry.title.content).attr("href", entry.link.href);
 	    dt.append(a);
+	    dt.append(entry.description);
 	    container.append(dt) /*.append(dd)*/;
 	}
     });
