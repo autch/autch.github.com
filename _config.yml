@@ -1,5 +1,6 @@
 # -*- coding: utf-8-unix; -*-
 
+markdown: kramdown
 url_prefix: http://www.autch.net/
 
 links:
