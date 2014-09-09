@@ -1,65 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
-  <head profile="http://purl.org/net/ns/metaprof">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="content-style-type" content="text/css; charset=UTF-8" />
-    <meta http-equiv="content-script-type" content="text/javascript; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="{{site.url_prefix}}/common.css" />
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="{{site.url_prefix}}/load-rss.js"></script>
-    <script type="text/javascript">
-      jQuery(function() {
-        initialize_antenna_feeds();
-{% if page.is_index %}
-        initialize_diary_feeds();
-        initialize_github_feeds();
-{% endif %}
-      });
-    </script>
-    <title>{{ page.title }}{% if page.is_index == FALSE %} - Autch.net{% endif %}</title>
-    <meta name="verify-v1" content="BWhzjA8nEsWQLbCJALML2WbZ1mbW7VK09zPdsveIgUY=" />
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{page.title}}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      body {
+      padding-top: 60px;
+      padding-bottom: 20px;
+      }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
-<body>
-<div id="headerbar" style="background-image: url("{{site.url_prefix}}/images/dot.gif");"><a href="{{site.url_prefix}}/index.m.html">iPhone 版</a></div>
-
-<div id="headerlogo">
-  <span class="title"><a href="{{site.url_prefix}}/index.html"><img src="{{site.url_prefix}}/images/Autch.net.png" alt="Autch.net" width="160" height="32"/></a></span>
-</div>
-
-<!-- メイン部分の定義 -->
-<div class="main_body">
-<!-- 左ブロック部分の定義 -->
-<div id="leftcolumn" valign="top">
-  <div class="blockTitle">メニュー</div>
-  <div class="blockContent">{% include menu.tpl %}</div>
-  <div class="blockTitle">アンテナ</div>
-  <div class="blockContent">
-    <div class="antennasection">
-      <div id="antennasection">
-	アンテナを読み込んでいます…
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand">Autch.net</span>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="https://github.com/autch">GitHub</a></li>
+            <li><a href="https://twitter.com/autch">Twitter</a></li>
+            <li><a href="http://d.hatena.ne.jp/autch/">はてなダイアリー</a></li>
+            <li><a href="http://a.hatena.ne.jp/autch/">はてなアンテナ</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">リンク <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                {% for category in site.data.link %}
+                {% for item in category.items %}
+                <li><a href="{{item.href}}">{{item.title}}</a></li>{% endfor %}
+                {% unless forloop.last %}
+                <li class="divider"></li>
+                {% endunless %}
+                {% endfor %}
+              </ul>
+            </li>
+            <li><a href="http://tnok.jp/">谷岡.jp</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
       </div>
-      <br />
-      <div style="font-weight: bold;">
-	<a href="http://a.hatena.ne.jp/autch/">もっと見る＠はてなアンテナ</a></div>
     </div>
+
+{{content}}
+
+<footer class="autchnet-footer">
+  <div class="container">
+    <p>転載・引用・リンク・アンリンク自由。一切のコンテンツは無保証。</p>
+    <p>&copy; 2000, 2014 Autch.net</p>
   </div>
-</div>
-<div id="centercolumn" valign="top">
-
-{% if page.is_index == FALSE %}
-<h1>{{ page.title | escape }}</h1>
-{% endif %}
-
-{{ content }}
-
-</div>
-<div id="footerbar">
-転載・引用・リンク・アンリンク自由。一切のコンテンツは無保証。<br />
-Copyright &copy; 2000, 2012, Autch.net.
-&quot;gray_forest&quot; theme designed by <a href="http://hello.oceannet.jp/">OCEAN-NET</a>.
-</div>
-</body>
+</footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+      <script src="js/vendor/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+  </body>
 </html>
-
