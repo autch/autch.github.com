@@ -4,35 +4,28 @@ layout: default
 ---
 
 <div class="container">
-  <div class="row"> 
-   <div class="col-md-4 col-sm-6"><p><a href="https://github.com/autch">autch@GitHub</a></p>{% include github.html %}</div>
+  <div class="row">
+    <div class="col-md-4 col-sm-6"><p><a href="https://github.com/autch">autch@GitHub</a></p>{% include github.html %}</div>
     <div class="col-md-4 col-sm-6"><p><a href="https://twitter.com/autch">autch@Twitter</a></p>{% include twitter.html %}</div>
     <div class="col-md-4 col-sm-6"><p><a href="http://d.hatena.ne.jp/autch">autch@はてなダイアリー</a></p>{% include hatena.html %}</div>
   </div>
 </div>
 
 <div class="container">
-<h3>ダウンロード</h3>
-<div class="panel-group">
-{% for category in site.data.downloads %}
-<div class="panel panel-default">
-  <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" href="#panel-{{category.name}}">{{category.title}}</a></h4></div>
-  <div id="panel-{{category.name}}" class="panel-collapse collapse in">
-    <div class="panel-body">
-      {% for item in category.items %}
-      <div class="col-xs-6 col-sm-3 col-md-3" style="height: 120px; padding-left: 4px; padding-right: 4px;">
-        <div class="thumbnail">
-          <div class="caption">
-            <h5>{% if item.github %}<a href="https://github.com/{{item.github}}"><img src="img/GitHub-Mark-120px-plus.png" style="height: 1em; margin: 0px;display: inline;" alt="GitHubプロジェクト"></a> {% endif %}<a href="{{item.link}}">{{item.name}}</a>{% if item.source %} <a href="{{item.source}}">（ソース）</a>{% endif %}</h5>
-            <p>{{item.description}}</p>
+  <h3>ダウンロード</h3>
+  <div class="panel-group">{% for category in site.data.downloads %}
+    <div class="panel panel-default">
+      <div class="panel-heading"><h4 class="panel-title">{{category.title}}</h4></div>
+      <div class="panel-body">{% for item in category.items %}
+        <div class="download-item col-xs-6 col-sm-3 col-md-3">
+          <div class="thumbnail">
+            <div class="caption">
+              <h5>{% if item.github %}<a href="https://github.com/{{item.github}}"><img src="img/GitHub-Mark-120px-plus.png" style="height: 1em; margin: 0px;display: inline;" alt="GitHubプロジェクト"></a> {% endif %}<a href="{{item.link}}">{{item.name}}</a>{% if item.source %} <a href="{{item.source}}">（ソース）</a>{% endif %}</h5>
+              <p>{{item.description}}</p>
+            </div>
           </div>
-        </div>
+        </div>{% endfor %}
       </div>
-      {% endfor %}      
-    </div>
+    </div>{% endfor %}
   </div>
 </div>
-{% endfor %}
-</div>
-</div>
-
