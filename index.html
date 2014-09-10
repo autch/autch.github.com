@@ -18,11 +18,9 @@ layout: default
       <div class="panel-heading"><h4 class="panel-title">{{category.title}}</h4></div>
       <div class="panel-body">{% for item in category.items %}
         <div class="download-item col-xs-6 col-sm-3 col-md-3">
-          <div class="thumbnail">
-            <div class="caption">
-              <h5>{% if item.github %}<a href="https://github.com/{{item.github}}"><img src="img/GitHub-Mark-120px-plus.png" style="height: 1em; margin: 0px;display: inline;" alt="GitHubプロジェクト"></a> {% endif %}<a href="{{item.link}}">{{item.name}}</a>{% if item.source %} <a href="{{item.source}}">（ソース）</a>{% endif %}</h5>
-              <p>{{item.description}}</p>
-            </div>
+          <div class="well well-sm">
+            <h5>{% if item.github %}<a href="https://github.com/{{item.github}}"><img src="img/GitHub-Mark-120px-plus.png" class="github-project" alt="GitHubプロジェクト"></a> {% endif %}<a href="{{item.link}}">{{item.name}}</a>{% if item.source %} <a href="{{item.source}}">（ソース）</a>{% endif %}</h5>
+            <p>{{item.description}}</p>
           </div>
         </div>{% endfor %}
       </div>
