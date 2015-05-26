@@ -2,86 +2,86 @@
   title: Windows アプリケーション
   items:
     - name: のこもDecoder
-      link: http://autch-online.autch.net/files/NokomoDecode_1.0.0.79_binary.zip
+      download: http://autch-online.autch.net/files/NokomoDecode_1.0.0.79_binary.zip
       source: http://autch-online.autch.net/files/NokomoDecode_1.0.0.79_source.zip
       description: KbMedia Player のプラグインを利用して，各種サウンドファイルを wav ファイルへデコード
 - name: java
   title: Javaアプリケーション
   items:
     - name: Androcast
-      link: http://autch-online.autch.net/files/androcast-r15.zip
+      download: http://autch-online.autch.net/files/androcast-r15.zip
       github: autch/androcast
       description: クロスプラットフォームな <a href="http://www.android.com/">Android</a> 用スクリーンモニタ
 - name: kpi
   title: KbMedia Player 用プラグイン
   items:
     - name: auPiECE.kpi
-      link: http://autch-online.autch.net/files/auPiECE_kpi-binary-1.11.zip
+      download: http://autch-online.autch.net/files/auPiECE_kpi-binary-1.11.zip
       source: http://autch-online.autch.net/files/auPiECE_kpi-source-1.11.zip
       description: <a href="http://www.piece-me.com/">P/ECE</a> の標準音源（pmd 形式）用プラグイン
     - name: auPPX.kpi
-      link: http://autch-online.autch.net/files/auPPX_kpi-binary-1.04.zip
+      download: http://autch-online.autch.net/files/auPPX_kpi-binary-1.04.zip
       source: http://autch-online.autch.net/files/auPPX_kpi-source-1.04.zip
       description: P/ECE の PCM ファイル（ppd, ppg, ppx）用プラグイン
     - name: kpibgmABC.kpi
-      link: http://autch-online.autch.net/files/kpibgmABC_1.02.zip
+      download: http://autch-online.autch.net/files/kpibgmABC_1.02.zip
       description: Studio Mebius 系のゲームの音声・音楽を再生
     - name: kpinwa2.kpi
-      link: http://autch-online.autch.net/files/kpinwa2_2.21.zip
+      download: http://autch-online.autch.net/files/kpinwa2_2.21.zip
       github: autch/kpinwa2.kpi
       description: Visual Arts 系のゲームの音声・音楽を再生
     - name: kpiWAF.kpi
-      link: http://autch-online.autch.net/files/kpiWAF_1.01.zip
+      download: http://autch-online.autch.net/files/kpiWAF_1.01.zip
       description: <a href="http://www.frieve.com/musicstd/">Music Studio シリーズ</a>の WAF フォーマット PCM ファイルを再生
     - name: kpiadx.kpi
-      link: http://autch-online.autch.net/files/kpiadx_1.04.zip
+      download: http://autch-online.autch.net/files/kpiadx_1.04.zip
       github: autch/kpiadx.kpi
       description: CRI ADX フォーマットの音声・音楽を再生
     - name: kpitak.kpi
-      link: http://autch-online.autch.net/files/kpitak_1.01.zip
+      download: http://autch-online.autch.net/files/kpitak_1.01.zip
       description: <a href="http://www.thbeck.de/Tak/Tak.html">TAK</a> フォーマットの音楽を再生
     - name: kpipxtone.kpi
-      link: http://autch-online.autch.net/files/kpipxtone_1.01.zip
+      download: http://autch-online.autch.net/files/kpipxtone_1.01.zip
       description: <a href="http://hp.vector.co.jp/authors/VA022293/">ピストンコラージュ</a> の音楽を再生
     - name: kpiopus.kpi
-      link: http://autch-online.autch.net/files/kpiopus_1.01.zip
+      download: http://autch-online.autch.net/files/kpiopus_1.01.zip
       github: autch/kpiopus
       description: <a href="http://opus-codec.org/">Ogg Opus</a> の音楽を再生
     - name: kpimp4.kpi
-      link: http://autch-online.autch.net/files/kpimp4103.cab
+      download: http://autch-online.autch.net/files/kpimp4103.cab
       description: S. Kino. さんによる MPEG4 audio decoder plugin の転載
 - name: piece-me
   title: P/ECE 用アプリケーション（実機用）
   items:
     - name: 連射速度測定器
-      link: http://autch-online.autch.net/files/rensha_20030514.zip
+      download: http://autch-online.autch.net/files/rensha_20030514.zip
       description: 一発ネタゲーム
     - name: (・∀・)
-      link: http://autch-online.autch.net/files/jien.zip
+      download: http://autch-online.autch.net/files/jien.zip
       description: 埋め込みビットマップのサンプル
     - name: pcecircle
-      link: http://autch-online.autch.net/files/pcecircle.zip
+      download: http://autch-online.autch.net/files/pcecircle.zip
       description: P/ECE 標準 API で円・楕円を描画
 - name: piece-windows
   title: P/ECE 用アプリケーション（Windows 用）
   items:
     - name: PFXA
-      link: http://autch-online.autch.net/files/PFXA_20050408.zip
+      download: http://autch-online.autch.net/files/PFXA_20050408.zip
       description: グラフィカルな P/ECE 用ファイル転送ソフト
     - name: par
-      link: http://autch-online.autch.net/files/par_20050321.zip
+      download: http://autch-online.autch.net/files/par_20050321.zip
       description: P/ECE の fpk 書庫ファイルを作成・展開．P/ECE 用展開ライブラリ libfpk もバンドル
     - name: pieceif.pas
-      link: http://autch-online.autch.net/files/PieceIF.zip
+      download: http://autch-online.autch.net/files/PieceIF.zip
       description: pieceif.dll を Delphi から使うためのユニット（Delphi ソース）
 - name: others
   title: その他
   items:
     - name: FMPMD 用リズム音源データ
-      link: http://autch-online.autch.net/files/sc-2608_20020203.zip
+      download: http://autch-online.autch.net/files/sc-2608_20020203.zip
       description: FMP/PMD のリズム音源を SC-88Pro のドラムで鳴らす
     - name: VSStyleIndenter
-      link: http://autch-online.autch.net/files/vsstyleindenter.zip
+      download: http://autch-online.autch.net/files/vsstyleindenter.zip
       description: <a href="http://www2k.biglobe.ne.jp/~araken/qxw.htm">QX エディタ</a>のインデント動作を Microsoft Visual Studio 互換にする＋おまけ
     - name: GPL に基づき公開された AQUAPLUS 作品
       link: https://github.com/autch/aquaplus_gpl

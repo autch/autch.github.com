@@ -19,7 +19,25 @@ layout: default
       <div class="panel-body">{% for item in category.items %}
         <div class="download-item col-xs-6 col-sm-3 col-md-3">
           <div class="well well-sm">
-            <h5>{% if item.github %}<a href="https://github.com/{{item.github}}"><img src="img/GitHub-Mark-120px-plus.png" class="github-project" alt="GitHubプロジェクト"></a> {% endif %}<a href="{{item.link}}">{{item.name}}</a>{% if item.source %} <a href="{{item.source}}">（ソース）</a>{% endif %}</h5>
+            <h5>
+{% if item.link %}
+<a href="{{item.link}}">{{item.name}}</a>
+{% else %}
+{{item.name}}
+{% endif %}
+
+<div class="btn-group btn-group-xs" role="group" aria-label="...">
+{% if item.github %}
+<a href="https://github.com/{{item.github}}" class="btn btn-default"><img src="img/GitHub-Mark-120px-plus.png" class="github-project" alt="GitHubプロジェクト"></a> 
+{% endif %}
+{% if item.download %}
+<a href="{{item.download}}" class="btn btn-default"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span><span class="sr-only">ダウンロード</span></a> 
+{% endif %}
+{% if item.source %}
+<a href="{{item.source}}" class="btn btn-default"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span><span class="sr-only">ソース</span></a>
+{% endif %}
+</div>
+</h5>
             <p>{{item.description}}</p>
           </div>
         </div>{% endfor %}
