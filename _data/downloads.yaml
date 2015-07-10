@@ -47,6 +47,10 @@
       download: http://autch-online.autch.net/files/kpiopus_1.01.zip
       github: autch/kpiopus
       description: <a href="http://opus-codec.org/">Ogg Opus</a> の音楽を再生
+    - name: kpidop.kpi
+      download: http://autch-online.autch.net/files/kpidop_201507102150.zip
+      github: autch/kpidsd
+      description: DSD 音源を DoP 方式で再生
     - name: kpimp4.kpi
       download: http://autch-online.autch.net/files/kpimp4103.cab
       description: S. Kino. さんによる MPEG4 audio decoder plugin の転載
