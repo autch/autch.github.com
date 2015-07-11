@@ -48,7 +48,7 @@
       github: autch/kpiopus
       description: <a href="http://opus-codec.org/">Ogg Opus</a> の音楽を再生
     - name: kpidop.kpi
-      download: http://autch-online.autch.net/files/kpidop_201507102150.zip
+      download: https://github.com/autch/kpidsd/releases/download/v1.0.0/kpidop_1.0.0.zip
       github: autch/kpidsd
       description: DSD 音源を DoP 方式で再生
     - name: kpimp4.kpi
