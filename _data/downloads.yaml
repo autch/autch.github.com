@@ -41,7 +41,8 @@
       download: http://autch-online.autch.net/files/kpitak_1.01.zip
       description: <a href="http://www.thbeck.de/Tak/Tak.html">TAK</a> フォーマットの音楽を再生
     - name: kpipxtone.kpi
-      download: http://autch-online.autch.net/files/kpipxtone_1.01.zip
+      download: https://github.com/autch/kpipxtone/releases/download/v1.2/kpipxtone_v1.2.zip
+      github: autch/kpipxtone
       description: <a href="http://hp.vector.co.jp/authors/VA022293/">ピストンコラージュ</a> の音楽を再生
     - name: kpiopus.kpi
       download: http://autch-online.autch.net/files/kpiopus_1.01.zip
