@@ -5,9 +5,9 @@ layout: default
 
 <div class="container">
   <div class="row">
-    <div class="col-md-4 col-sm-6"><p><a href="https://github.com/autch">autch@GitHub</a></p>{% include github.html %}</div>
-    <div class="col-md-4 col-sm-6"><p><a href="https://twitter.com/autch">autch@Twitter</a></p>{% include twitter.html %}</div>
-    <div class="col-md-4 col-sm-6"><p><a href="http://d.hatena.ne.jp/autch">autch@はてなダイアリー</a></p>{% include hatena.html %}</div>
+    <div class="col-md-4 col-sm-6">{% include github.html %}</div>
+    <div class="col-md-4 col-sm-6">{% include twitter.html %}</div>
+    <div class="col-md-4 col-sm-6">{% include hatena.html %}</div>
   </div>
 </div>
 
@@ -28,13 +28,13 @@ layout: default
 
 <div class="btn-group btn-group-xs" role="group" aria-label="...">
 {% if item.github %}
-<a href="https://github.com/{{item.github}}" class="btn btn-default"><img src="img/GitHub-Mark-120px-plus.png" class="github-project" alt="GitHubプロジェクト"></a> 
+<a href="https://github.com/{{item.github}}" class="btn btn-default" title="GitHub"><i class="fa fa-github"></i></a> 
 {% endif %}
 {% if item.download %}
-<a href="{{item.download}}" class="btn btn-default"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span><span class="sr-only">ダウンロード</span></a> 
+<a href="{{item.download}}" class="btn btn-default" title="ダウンロード"><i class="fa fa-download"></i></a> 
 {% endif %}
 {% if item.source %}
-<a href="{{item.source}}" class="btn btn-default"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span><span class="sr-only">ソース</span></a>
+<a href="{{item.source}}" class="btn btn-default" title="ソースコード"><i class="fa fa-code"></i></a>
 {% endif %}
 </div>
 </h5>
