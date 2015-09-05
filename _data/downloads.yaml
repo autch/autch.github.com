@@ -52,6 +52,10 @@
       download: https://github.com/autch/kpidsd/releases/download/v1.0.0/kpidop_1.0.0.zip
       github: autch/kpidsd
       description: DSD 音源を DoP 方式で再生
+    - name: kpiffmpeg.kpi
+      download: https://github.com/autch/kpiffmpeg/releases/download/v1.0.0/kpiffmpeg_v1.0.0.zip
+      github: autch/kpiffmpeg
+      description: 音楽ファイルのデコードを <a href="http://www.ffmpeg.org/">FFmpeg</a> に丸投げして再生
     - name: kpimp4.kpi
       download: http://autch-online.autch.net/files/kpimp4103.cab
       description: S. Kino. さんによる MPEG4 audio decoder plugin の転載

@@ -19,25 +19,13 @@ layout: default
       <div class="panel-body">{% for item in category.items %}
         <div class="download-item col-xs-6 col-sm-3 col-md-3">
           <div class="well well-sm">
-            <h5>
-{% if item.link %}
-<a href="{{item.link}}">{{item.name}}</a>
-{% else %}
-{{item.name}}
-{% endif %}
-
-<div class="btn-group btn-group-xs" role="group" aria-label="...">
-{% if item.github %}
-<a href="https://github.com/{{item.github}}" class="btn btn-default" title="GitHub"><i class="fa fa-github"></i></a> 
-{% endif %}
-{% if item.download %}
-<a href="{{item.download}}" class="btn btn-default" title="ダウンロード"><i class="fa fa-download"></i></a> 
-{% endif %}
-{% if item.source %}
-<a href="{{item.source}}" class="btn btn-default" title="ソースコード"><i class="fa fa-code"></i></a>
-{% endif %}
-</div>
-</h5>
+            <h5>{% if item.link %}<a href="{{item.link}}">{{item.name}}</a>{% else %}{{item.name}}{% endif %}
+              <span class="btn-group btn-group-xs" role="group" aria-label="...">
+                {% if item.github %}<a href="https://github.com/{{item.github}}" class="btn btn-default" title="GitHub"><i class="fa fa-github"></i></a>{% endif %}
+                {% if item.download %}<a href="{{item.download}}" class="btn btn-default" title="ダウンロード"><i class="fa fa-download"></i></a>{% endif %}
+                {% if item.source %}<a href="{{item.source}}" class="btn btn-default" title="ソースコード"><i class="fa fa-code"></i></a>{% endif %}
+              </span>
+            </h5>
             <p>{{item.description}}</p>
           </div>
         </div>{% endfor %}
