@@ -15,21 +15,20 @@ layout: default
   <h3>ダウンロード</h3>
   <div class="panel-group">{% for category in site.data.downloads %}
     <div class="panel panel-default">
-      <div class="panel-heading"><h4 class="panel-title">{{category.title}}</h4></div>
-      <div class="panel-body">{% for item in category.items %}
-        <div class="download-item col-xs-6 col-sm-3 col-md-3">
-          <div class="well well-sm">
-            <h5>{% if item.link %}<a href="{{item.link}}">{{item.name}}</a>{% else %}{{item.name}}{% endif %}
-              <span class="btn-group btn-group-xs" role="group" aria-label="...">
-                {% if item.github %}<a href="https://github.com/{{item.github}}" class="btn btn-default" title="GitHub"><i class="fa fa-github"></i></a>{% endif %}
-                {% if item.download %}<a href="{{item.download}}" class="btn btn-default" title="ダウンロード"><i class="fa fa-download"></i></a>{% endif %}
-                {% if item.source %}<a href="{{item.source}}" class="btn btn-default" title="ソースコード"><i class="fa fa-code"></i></a>{% endif %}
-              </span>
-            </h5>
-            <p>{{item.description}}</p>
-          </div>
-        </div>{% endfor %}
-      </div>
+      <div class="panel-heading"><h3 class="panel-title">{{category.title}}</h3></div>
+      <ul class="list-group">{% for item in category.items %}
+        <li class="list-group-item download-item">
+          <h4>{% if item.github %}<i class="fa fa-github"></i> <a href="https://github.com/{{item.github}}">{% endif %}
+            {{item.name}}
+            {% if item.github %}</a>{% endif %}</h4>
+          <p>{{item.description}}</p>
+          <span class="btn-group btn-group-sm" role="group" aria-label="...">
+            {% if item.github %}<a href="https://github.com/{{item.github}}" class="btn btn-default" title="GitHub"><i class="fa fa-github"></i> GitHub</a>{% endif %}
+            {% if item.download %}<a href="{{item.download}}" class="btn btn-default" title="ダウンロード"><i class="fa fa-download"></i> ダウンロード</a>{% endif %}
+            {% if item.source %}<a href="{{item.source}}" class="btn btn-default" title="ソースコード"><i class="fa fa-code"></i> ソースコード</a>{% endif %}
+          </span>
+        </li>{% endfor %}
+      </ul>
     </div>{% endfor %}
   </div>
 </div>

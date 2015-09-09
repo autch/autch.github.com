@@ -93,6 +93,5 @@
       download: http://autch-online.autch.net/files/vsstyleindenter.zip
       description: <a href="http://www2k.biglobe.ne.jp/~araken/qxw.htm">QX エディタ</a>のインデント動作を Microsoft Visual Studio 互換にする＋おまけ
     - name: GPL に基づき公開された AQUAPLUS 作品
-      link: https://github.com/autch/aquaplus_gpl
       github: autch/aquaplus_gpl
       description: 公開された 4 作品のソースコードの再配布
