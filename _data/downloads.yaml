@@ -38,7 +38,8 @@
       github: autch/kpiadx.kpi
       description: CRI ADX フォーマットの音声・音楽を再生
     - name: kpitak.kpi
-      download: http://autch-online.autch.net/files/kpitak_1.01.zip
+      github: autch/kpitak
+      download: https://github.com/autch/kpitak/releases/download/v1.02/kpitak_v1.02.zip
       description: <a href="http://www.thbeck.de/Tak/Tak.html">TAK</a> フォーマットの音楽を再生
     - name: kpipxtone.kpi
       download: https://github.com/autch/kpipxtone/releases/download/v1.2/kpipxtone_v1.2.zip
