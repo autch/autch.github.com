@@ -13,22 +13,29 @@ layout: default
 
 <div class="container">
   <h3>ダウンロード</h3>
-  <div class="panel-group">{% for category in site.data.downloads %}
+  <div class="panel-group" id="downloads-accordion" role="tablist" aria-multiselectable="true">{% for category in site.data.downloads %}
     <div class="panel panel-default">
-      <div class="panel-heading"><h3 class="panel-title">{{category.title}}</h3></div>
-      <ul class="list-group">{% for item in category.items %}
-        <li class="list-group-item download-item">
-          <h4>{% if item.github %}<i class="fa fa-github"></i> <a href="https://github.com/{{item.github}}">{% endif %}
-            {{item.name}}
-            {% if item.github %}</a>{% endif %}</h4>
-          <p>{{item.description}}</p>
-          <span class="btn-group btn-group-sm" role="group" aria-label="...">
-            {% if item.github %}<a href="https://github.com/{{item.github}}" class="btn btn-default" title="GitHub"><i class="fa fa-github"></i> GitHub</a>{% endif %}
-            {% if item.download %}<a href="{{item.download}}" class="btn btn-default" title="ダウンロード"><i class="fa fa-download"></i> ダウンロード</a>{% endif %}
-            {% if item.source %}<a href="{{item.source}}" class="btn btn-default" title="ソースコード"><i class="fa fa-code"></i> ソースコード</a>{% endif %}
-          </span>
-        </li>{% endfor %}
-      </ul>
+      <div class="panel-heading" role="tab" id="heading-{{category.name}}">
+        <h3 class="panel-title">
+          <a href="#collapse-{{category.name}}" role="button" data-toggle="collapse" data-parent="#downloads-accordion"
+             aria-expanded="false" aria-controls="collapse-{{category.name}}">{{category.title}}</a>
+        </h3>
+      </div>
+      <div id="collapse-{{category.name}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{category.name}}">
+        <ul class="list-group">{% for item in category.items %}
+          <li class="list-group-item download-item">
+            <h4>{% if item.github %}<i class="fa fa-github"></i> <a href="https://github.com/{{item.github}}">{% endif %}
+                {{item.name}}
+                {% if item.github %}</a>{% endif %}</h4>
+            <p>{{item.description}}</p>
+            <span class="btn-group btn-group-sm" role="group" aria-label="...">
+              {% if item.github %}<a href="https://github.com/{{item.github}}" class="btn btn-default" title="GitHub"><i class="fa fa-github"></i> GitHub</a>{% endif %}
+              {% if item.download %}<a href="{{item.download}}" class="btn btn-default" title="ダウンロード"><i class="fa fa-download"></i> ダウンロード</a>{% endif %}
+              {% if item.source %}<a href="{{item.source}}" class="btn btn-default" title="ソースコード"><i class="fa fa-code"></i> ソースコード</a>{% endif %}
+            </span>
+          </li>{% endfor %}
+        </ul>
+      </div>
     </div>{% endfor %}
   </div>
 </div>
