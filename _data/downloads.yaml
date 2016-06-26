@@ -15,28 +15,10 @@
 - name: kpi
   title: KbMedia Player 用プラグイン
   items:
-    - name: auPiECE.kpi
-      download: http://autch-online.autch.net/files/auPiECE_kpi-binary-1.11.zip
-      source: http://autch-online.autch.net/files/auPiECE_kpi-source-1.11.zip
-      description: <a href="http://www.piece-me.com/">P/ECE</a> の標準音源（pmd 形式）用プラグイン
-    - name: auPPX.kpi
-      download: http://autch-online.autch.net/files/auPPX_kpi-binary-1.04.zip
-      source: http://autch-online.autch.net/files/auPPX_kpi-source-1.04.zip
-      description: P/ECE の PCM ファイル（ppd, ppg, ppx）用プラグイン
-    - name: kpibgmABC.kpi
-      download: http://autch-online.autch.net/files/kpibgmABC_1.02.zip
-      description: Studio Mebius 系のゲームの音声・音楽を再生
-    - name: kpinwa2.kpi
-      download: http://autch-online.autch.net/files/kpinwa2_2.21.zip
-      github: autch/kpinwa2.kpi
-      description: Visual Arts 系のゲームの音声・音楽を再生
-    - name: kpiWAF.kpi
-      download: http://autch-online.autch.net/files/kpiWAF_1.01.zip
-      description: <a href="http://www.frieve.com/musicstd/">Music Studio シリーズ</a>の WAF フォーマット PCM ファイルを再生
-    - name: kpiadx.kpi
-      download: http://autch-online.autch.net/files/kpiadx_1.04.zip
-      github: autch/kpiadx.kpi
-      description: CRI ADX フォーマットの音声・音楽を再生
+    - name: kpidop.kpi
+      download: https://github.com/autch/kpidsd/releases/download/v1.0.0/kpidop_1.0.0.zip
+      github: autch/kpidsd
+      description: DSD 音源を DoP 方式で再生
     - name: kpitak.kpi
       github: autch/kpitak
       download: https://github.com/autch/kpitak/releases/download/v1.02/kpitak_v1.02.zip
@@ -45,18 +27,36 @@
       download: https://github.com/autch/kpipxtone/releases/download/v1.2/kpipxtone_v1.2.zip
       github: autch/kpipxtone
       description: <a href="http://hp.vector.co.jp/authors/VA022293/">ピストンコラージュ</a> の音楽を再生
-    - name: kpiopus.kpi
-      download: http://autch-online.autch.net/files/kpiopus_1.01.zip
-      github: autch/kpiopus
-      description: <a href="http://opus-codec.org/">Ogg Opus</a> の音楽を再生
-    - name: kpidop.kpi
-      download: https://github.com/autch/kpidsd/releases/download/v1.0.0/kpidop_1.0.0.zip
-      github: autch/kpidsd
-      description: DSD 音源を DoP 方式で再生
     - name: kpiffmpeg.kpi
       download: https://github.com/autch/kpiffmpeg/releases/download/v1.0.0/kpiffmpeg_v1.0.0.zip
       github: autch/kpiffmpeg
       description: 音楽ファイルのデコードを <a href="http://www.ffmpeg.org/">FFmpeg</a> に丸投げして再生
+    - name: kpinwa2.kpi
+      download: http://autch-online.autch.net/files/kpinwa2_2.21.zip
+      github: autch/kpinwa2.kpi
+      description: Visual Arts 系のゲームの音声・音楽を再生
+    - name: kpiadx.kpi
+      download: http://autch-online.autch.net/files/kpiadx_1.04.zip
+      github: autch/kpiadx.kpi
+      description: CRI ADX フォーマットの音声・音楽を再生
+    - name: kpiopus.kpi
+      download: http://autch-online.autch.net/files/kpiopus_1.01.zip
+      github: autch/kpiopus
+      description: <a href="http://opus-codec.org/">Ogg Opus</a> の音楽を再生
+    - name: auPiECE.kpi
+      download: http://autch-online.autch.net/files/auPiECE_kpi-binary-1.11.zip
+      source: http://autch-online.autch.net/files/auPiECE_kpi-source-1.11.zip
+      description: <a href="http://www.piece-me.com/">P/ECE</a> の標準音源（pmd 形式）用プラグイン
+    - name: auPPX.kpi
+      download: http://autch-online.autch.net/files/auPPX_kpi-binary-1.04.zip
+      source: http://autch-online.autch.net/files/auPPX_kpi-source-1.04.zip
+      description: P/ECE の PCM ファイル（ppd, ppg, ppx）用プラグイン
+    - name: kpiWAF.kpi
+      download: http://autch-online.autch.net/files/kpiWAF_1.01.zip
+      description: <a href="http://www.frieve.com/musicstd/">Music Studio シリーズ</a>の WAF フォーマット PCM ファイルを再生
+    - name: kpibgmABC.kpi
+      download: http://autch-online.autch.net/files/kpibgmABC_1.02.zip
+      description: Studio Mebius 系のゲームの音声・音楽を再生
     - name: kpimp4.kpi
       download: http://autch-online.autch.net/files/kpimp4103.cab
       description: S. Kino. さんによる MPEG4 audio decoder plugin の転載
