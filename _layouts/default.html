@@ -7,8 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--link rel="stylesheet" href="css/main.css"-->
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"-->
+    <style>
+      .widgets-with-height { height: 400px; }
+      .autchnet-footer {
+        padding-top: 20px;
+        margin-top: 10px;
+        color: #777;
+        text-align: center;
+        border-top: 1px solid #ddd;
+      }
+    </style>
   </head>
   <body>
     <div class="navbar navbar-default navbar-static-top" role="navigation">
@@ -54,6 +64,21 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <!--script src="js/main.js"></script-->
+    <script>
+      var csses = [
+        'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'
+      ];
+      var cb = function() {
+        for(var i = 0; i < csses.length; i++) {
+          var l = document.createElement('link'); l.rel = 'stylesheet';
+          l.href = csses[i];
+          var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+        }
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
   </body>
 </html>
