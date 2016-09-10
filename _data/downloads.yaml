@@ -5,13 +5,6 @@
       download: http://autch-online.autch.net/files/NokomoDecode_1.0.0.79_binary.zip
       source: http://autch-online.autch.net/files/NokomoDecode_1.0.0.79_source.zip
       description: KbMedia Player のプラグインを利用して，各種サウンドファイルを wav ファイルへデコード
-- name: java
-  title: Javaアプリケーション
-  items:
-    - name: Androcast
-      download: http://autch-online.autch.net/files/androcast-r15.zip
-      github: autch/androcast
-      description: クロスプラットフォームな <a href="http://www.android.com/">Android</a> 用スクリーンモニタ
 - name: kpi
   title: KbMedia Player 用プラグイン
   items:
@@ -19,10 +12,6 @@
       download: https://github.com/autch/kpidsd/releases/download/v1.0.0/kpidop_1.0.0.zip
       github: autch/kpidsd
       description: DSD 音源を DoP 方式で再生
-    - name: kpitak.kpi
-      github: autch/kpitak
-      download: https://github.com/autch/kpitak/releases/download/v1.02/kpitak_v1.02.zip
-      description: <a href="http://www.thbeck.de/Tak/Tak.html">TAK</a> フォーマットの音楽を再生
     - name: kpipxtone.kpi
       download: https://github.com/autch/kpipxtone/releases/download/v1.2/kpipxtone_v1.2.zip
       github: autch/kpipxtone
@@ -39,10 +28,6 @@
       download: http://autch-online.autch.net/files/kpiadx_1.04.zip
       github: autch/kpiadx.kpi
       description: CRI ADX フォーマットの音声・音楽を再生
-    - name: kpiopus.kpi
-      download: http://autch-online.autch.net/files/kpiopus_1.01.zip
-      github: autch/kpiopus
-      description: <a href="http://opus-codec.org/">Ogg Opus</a> の音楽を再生
     - name: auPiECE.kpi
       download: http://autch-online.autch.net/files/auPiECE_kpi-binary-1.11.zip
       source: http://autch-online.autch.net/files/auPiECE_kpi-source-1.11.zip
@@ -51,15 +36,6 @@
       download: http://autch-online.autch.net/files/auPPX_kpi-binary-1.04.zip
       source: http://autch-online.autch.net/files/auPPX_kpi-source-1.04.zip
       description: P/ECE の PCM ファイル（ppd, ppg, ppx）用プラグイン
-    - name: kpiWAF.kpi
-      download: http://autch-online.autch.net/files/kpiWAF_1.01.zip
-      description: <a href="http://www.frieve.com/musicstd/">Music Studio シリーズ</a>の WAF フォーマット PCM ファイルを再生
-    - name: kpibgmABC.kpi
-      download: http://autch-online.autch.net/files/kpibgmABC_1.02.zip
-      description: Studio Mebius 系のゲームの音声・音楽を再生
-    - name: kpimp4.kpi
-      download: http://autch-online.autch.net/files/kpimp4103.cab
-      description: S. Kino. さんによる MPEG4 audio decoder plugin の転載
 - name: piece-me
   title: P/ECE 用アプリケーション（実機用）
   items:
@@ -84,6 +60,33 @@
     - name: pieceif.pas
       download: http://autch-online.autch.net/files/PieceIF.zip
       description: pieceif.dll を Delphi から使うためのユニット（Delphi ソース）
+- name: kpi-old
+  title: KbMedia Player 用プラグイン（古い）
+  items:
+    - name: kpitak.kpi
+      github: autch/kpitak
+      download: https://github.com/autch/kpitak/releases/download/v1.02/kpitak_v1.02.zip
+      description: <s><a href="http://www.thbeck.de/Tak/Tak.html">TAK</a> フォーマットの音楽を再生</s> → 本体同梱の kbtak.kpi を推奨
+    - name: kpiopus.kpi
+      download: http://autch-online.autch.net/files/kpiopus_1.01.zip
+      github: autch/kpiopus
+      description: <s><a href="http://opus-codec.org/">Ogg Opus</a> の音楽を再生</s> → 本体同梱の kbopus.kpi を推奨
+    - name: kpiWAF.kpi
+      download: http://autch-online.autch.net/files/kpiWAF_1.01.zip
+      description: <a href="http://www.frieve.com/musicstd/">Music Studio シリーズ</a>の WAF フォーマット PCM ファイルを再生
+    - name: kpibgmABC.kpi
+      download: http://autch-online.autch.net/files/kpibgmABC_1.02.zip
+      description: Studio Mebius 系のゲームの音声・音楽を再生
+    - name: kpimp4.kpi
+      download: http://autch-online.autch.net/files/kpimp4103.cab
+      description: S. Kino. さんによる MPEG4 audio decoder plugin の転載
+- name: java
+  title: Javaアプリケーション
+  items:
+    - name: Androcast
+      download: http://autch-online.autch.net/files/androcast-r15.zip
+      github: autch/androcast
+      description: <s>クロスプラットフォームな <a href="http://www.android.com/">Android</a> 用スクリーンモニタ</s> → 現在の Android では使えません
 - name: others
   title: その他
   items:
@@ -96,3 +99,4 @@
     - name: GPL に基づき公開された AQUAPLUS 作品
       github: autch/aquaplus_gpl
       description: 公開された 4 作品のソースコードの再配布
+
