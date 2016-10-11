@@ -9,7 +9,7 @@
   title: KbMedia Player 用プラグイン
   items:
     - name: kpidop.kpi
-      download: https://github.com/autch/kpidsd/releases/download/v1.0.0/kpidop_1.0.0.zip
+      download: https://github.com/autch/kpidsd/releases/download/v2.0.0/kpidop_2.0.0.zip
       github: autch/kpidsd
       description: DSD 音源を DoP 方式で再生
     - name: kpipxtone.kpi
@@ -79,7 +79,7 @@
       description: Studio Mebius 系のゲームの音声・音楽を再生
     - name: kpimp4.kpi
       download: http://autch-online.autch.net/files/kpimp4103.cab
-      description: S. Kino. さんによる MPEG4 audio decoder plugin の転載
+      description: <s>S. Kino. さんによる MPEG4 audio decoder plugin の転載</s> → 本体同梱の kbm4a.kpi を推奨
 - name: java
   title: Javaアプリケーション
   items:
