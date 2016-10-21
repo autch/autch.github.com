@@ -9,9 +9,13 @@
   title: KbMedia Player 用プラグイン
   items:
     - name: kpidop.kpi
-      download: https://github.com/autch/kpidsd/releases/download/v2.0.0/kpidop_2.0.0.zip
+      download: https://github.com/autch/kpidsd/releases/download/kpidop-v2.0.1/kpidop_2.0.1.zip
       github: autch/kpidsd
       description: DSD 音源を DoP 方式で再生
+    - name: kpid2p.kpi
+      download: https://github.com/autch/kpidsd/releases/download/kpid2p-v1.0.0/kpid2p_1.0.0.zip
+      github: autch/kpidsd
+      description: DSD 音源を PCM に変換して再生
     - name: kpipxtone.kpi
       download: https://github.com/autch/kpipxtone/releases/download/v1.2/kpipxtone_v1.2.zip
       github: autch/kpipxtone
