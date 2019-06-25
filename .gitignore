@@ -1,4 +1,6 @@
+*.gem
+.bundle
+.sass-cache
 _site/
-*.zip
-.AppleDouble/
-
+Gemfile.lock
+**/.ruby-version

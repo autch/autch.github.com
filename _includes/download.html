@@ -1,0 +1,30 @@
+{% for category in site.data.downloads %}
+<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>{{category.title}}</h2>
+<div class="d-sm-flex flex-wrap gutter-condensed mb-4">
+    {% for item in category.items %}
+    <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        <div
+            class="github-component d-flex flex-column flex-justify-between height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+            <div>
+                <div class="d-flex flex-justify-between flex-items-start mb-1">
+                    <h1 class="f4 lh-condensed mb-1">
+                        {% if item.github %}{% octicon mark-github %} <a
+                            href="https://github.com/{{item.github}}">{{item.name}}</a>{% else %}{{item.name}}{% endif %}
+                    </h1>
+                </div>
+                <div class="text-gray mb-2 ws-normal">{{item.description}}</div>
+                <div class="d-flex f6">
+                    {% if item.github %}<a href="https://github.com/{{item.github}}"
+                        class="btn btn-sm btn-outline-primary" title="GitHub">{% octicon mark-github %} <span
+                            class="">GitHub</span></a>{% endif %}
+                    {% if item.download %}<a href="{{item.download}}" class="btn btn-sm btn-outline-primary"
+                        title="ダウンロード">{% octicon desktop-download %} <span class="">ダウンロード</span></a>{% endif %}
+                    {% if item.source %}<a href="{{item.source}}" class="btn btn-sm btn-outline-primary"
+                        title="ソースコード">{% octicon file-code %} <span class="">ソースコード</span></a>{% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}

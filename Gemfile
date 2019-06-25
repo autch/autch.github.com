@@ -1,6 +1,5 @@
-# A sample Gemfile
-source "https://rubygems.org"
-
-# gem "rails"
-gem "github-pages", group: :jekyll_plugins
-
+source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins
+gem "jekyll-github-metadata"
+gem "jekyll-octicons"
+gem "jemoji"
