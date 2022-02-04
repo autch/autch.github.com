@@ -29,7 +29,7 @@
       github: autch/kpinwa2.kpi
       description: Visual Arts 系のゲームの音声・音楽を再生
     - name: kpiadx.kpi
-      download: http://autch-online.autch.net/files/kpiadx_1.04.zip
+      download: https://github.com/autch/kpiadx.kpi/releases/download/v2.00/kpiadx_v2.0.zip
       github: autch/kpiadx.kpi
       description: CRI ADX フォーマットの音声・音楽を再生
     - name: auPiECE.kpi
