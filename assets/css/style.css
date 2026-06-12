@@ -1,23 +1,8 @@
+/* 配色は UA に委ねる。指定が必要な箇所もシステムカラーから派生させる */
 :root {
-  --bg: #ffffff;
-  --bg-subtle: #f6f8fa;
-  --fg: #1f2328;
-  --fg-muted: #59636e;
-  --border: #d1d9e0;
-  --accent: #0969da;
-  --card-bg: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0d1117;
-    --bg-subtle: #151b23;
-    --fg: #f0f6fc;
-    --fg-muted: #9198a1;
-    --border: #3d444d;
-    --accent: #4493f8;
-    --card-bg: #151b23;
-  }
+  color-scheme: light dark;
+  --border: color-mix(in srgb, CanvasText 25%, Canvas);
+  --bg-subtle: color-mix(in srgb, CanvasText 6%, Canvas);
 }
 
 * {
@@ -30,8 +15,6 @@ body {
     "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  color: var(--fg);
-  background: var(--bg);
 }
 
 .container {
@@ -41,7 +24,6 @@ body {
 }
 
 a {
-  color: var(--accent);
   text-decoration: none;
 }
 
@@ -69,21 +51,11 @@ a:hover {
 .site-title {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--fg);
 }
 
 .site-nav {
   display: flex;
   gap: 1rem;
-}
-
-.site-nav a {
-  color: var(--fg-muted);
-}
-
-.site-nav a:hover {
-  color: var(--accent);
-  text-decoration: none;
 }
 
 /* Profile */
@@ -106,7 +78,6 @@ a:hover {
 }
 
 .profile .bio {
-  color: var(--fg-muted);
   margin-bottom: 0.5rem;
 }
 
@@ -122,17 +93,11 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  color: var(--fg-muted);
 }
 
 .social-links svg {
   width: 20px;
   height: 20px;
-}
-
-.social-links a:hover {
-  color: var(--accent);
-  text-decoration: none;
 }
 
 /* Download cards */
@@ -157,7 +122,6 @@ a:hover {
   gap: 0.5rem 1.5rem;
   border: 1px solid var(--border);
   border-radius: 0.5rem;
-  background: var(--card-bg);
   padding: 0.75rem 1rem;
 }
 
@@ -173,7 +137,6 @@ a:hover {
 .card-desc {
   margin: 0;
   font-size: 0.875rem;
-  color: var(--fg-muted);
 }
 
 .card-actions {
@@ -188,15 +151,15 @@ a:hover {
   gap: 0.35rem;
   padding: 0.25rem 0.75rem;
   font-size: 0.8rem;
-  border: 1px solid var(--accent);
+  border: 1px solid LinkText;
   border-radius: 0.4rem;
-  color: var(--accent);
+  color: LinkText;
   white-space: nowrap;
 }
 
 .btn:hover {
-  background: var(--accent);
-  color: var(--bg);
+  background: LinkText;
+  color: Canvas;
   text-decoration: none;
 }
 
@@ -215,13 +178,11 @@ a:hover {
 }
 
 .post-list time {
-  color: var(--fg-muted);
   font-variant-numeric: tabular-nums;
   flex-shrink: 0;
 }
 
 .post-list .empty {
-  color: var(--fg-muted);
   border-bottom: none;
 }
 
@@ -232,7 +193,6 @@ a:hover {
 }
 
 .article-meta {
-  color: var(--fg-muted);
   margin-top: -0.5rem;
 }
 
@@ -261,7 +221,6 @@ a:hover {
   margin-left: 0;
   padding-left: 1rem;
   border-left: 3px solid var(--border);
-  color: var(--fg-muted);
 }
 
 .article table {
@@ -291,7 +250,6 @@ a:hover {
 
 .copyright {
   margin: 0;
-  color: var(--fg-muted);
   font-size: 0.875rem;
 }
 
