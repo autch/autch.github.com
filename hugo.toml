@@ -1,0 +1,53 @@
+baseURL = "https://www.autch.net/"
+locale = "ja"
+defaultContentLanguage = "ja"
+hasCJKLanguage = true
+title = "Autch"
+enableEmoji = true
+
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Autch のホームページ。自作ソフトウェアの配布と雑記。"
+
+# https://github.com/autch のプロフィールと同期
+[[params.social]]
+  name = "GitHub"
+  url = "https://github.com/autch"
+  icon = "github"
+
+[[params.social]]
+  name = "X"
+  url = "https://twitter.com/autch"
+  icon = "x"
+
+[[params.social]]
+  name = "Misskey"
+  url = "https://misskey.io/@autch"
+  icon = "misskey"
+
+[[params.social]]
+  name = "Bluesky"
+  url = "https://bsky.app/profile/autch.net"
+  icon = "bluesky"
+
+[[params.social]]
+  name = "メール"
+  url = "mailto:autch@autch.net"
+  icon = "mail"
+
+# Jekyll 流の「YYYY-MM-DD-title.md」ファイル名から日付を拾う
+[frontmatter]
+  date = [":filename", ":default"]
+
+# 旧 Jekyll サイトの permalink (/:year/:month/:day/:title/) を踏襲
+[permalinks.page]
+  posts = "/:year/:month/:day/:slugorcontentbasename/"
+
+[markup.goldmark.renderer]
+  # Markdown 中の生 HTML を許可（Jekyll と同等の挙動）
+  unsafe = true
+
+[markup.highlight]
+  style = "github"
+  noClasses = true

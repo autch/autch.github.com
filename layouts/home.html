@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="profile">
+  <img class="avatar" src="{{ "images/avatar.png" | relURL }}" alt="" width="120" height="120">
+  <div class="profile-body">
+    <h1>{{ site.Title }}</h1>
+    {{ with .Content }}<div class="bio">{{ . }}</div>{{ end }}
+    {{ partial "social.html" . }}
+  </div>
+</section>
+
+<section class="downloads">
+  {{ partial "downloads.html" . }}
+</section>
+
+{{ $posts := where site.RegularPages "Section" "posts" }}
+{{ with $posts | first 5 }}
+<section class="recent-posts">
+  <h2>最近の日記</h2>
+  <ul class="post-list">
+    {{ range . }}
+    <li>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+  <p><a href="{{ "/posts/" | relURL }}">すべての日記 →</a></p>
+</section>
+{{ end }}
+{{ end }}

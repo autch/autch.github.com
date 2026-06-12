@@ -1,0 +1,10 @@
+<ul class="social-links">
+  {{ range site.Params.social }}
+  <li>
+    <a href="{{ .url }}" title="{{ .name }}"{{ if not (hasPrefix .url "mailto:") }} rel="me"{{ end }}>
+      {{ partial (printf "icons/%s.html" .icon) . }}
+      <span>{{ .name }}</span>
+    </a>
+  </li>
+  {{ end }}
+</ul>

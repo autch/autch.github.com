@@ -1,0 +1,35 @@
+{{ range hugo.Data.downloads }}
+<h2 id="{{ .name }}">{{ .title }}</h2>
+<div class="card-grid">
+  {{ range .items }}
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">
+        {{ if .github }}<a href="https://github.com/{{ .github }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
+      </h3>
+      <p class="card-desc">{{ .description | safeHTML }}</p>
+    </div>
+    <div class="card-actions">
+      {{ with .github }}
+      <a class="btn" href="https://github.com/{{ . }}">
+        {{ partial "icons/github.html" . }}
+        GitHub
+      </a>
+      {{ end }}
+      {{ with .download }}
+      <a class="btn" href="{{ . }}">
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M4.927 5.427 7.604 8.104a.25.25 0 0 0 .354 0l2.677-2.677A.25.25 0 0 0 10.458 5H5.104a.25.25 0 0 0-.177.427Z"></path><path d="M1.573 2.573A.25.25 0 0 1 1.75 2.5h12.5a.25.25 0 0 1 .25.25v8.5a.25.25 0 0 1-.25.25h-3a.75.75 0 0 0 0 1.5h3A1.75 1.75 0 0 0 16 11.25v-8.5A1.75 1.75 0 0 0 14.25 1H1.75A1.75 1.75 0 0 0 0 2.75v8.5C0 12.216.784 13 1.75 13h3a.75.75 0 0 0 0-1.5h-3a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .073-.177Z"></path><path d="M7.25 15.25v-5.5a.75.75 0 0 1 1.5 0v5.5a.75.75 0 0 1-1.5 0Z"></path></svg>
+        ダウンロード
+      </a>
+      {{ end }}
+      {{ with .source }}
+      <a class="btn" href="{{ . }}">
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M4.72 3.22a.75.75 0 0 1 1.06 1.06L2.06 8l3.72 3.72a.75.75 0 1 1-1.06 1.06L.47 8.53a.75.75 0 0 1 0-1.06Zm6.56 0a.75.75 0 1 0-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 1 0 1.06 1.06l4.25-4.25a.75.75 0 0 0 0-1.06Z"></path></svg>
+        ソースコード
+      </a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,9 +1,8 @@
-*.gem
-.bundle
-.sass-cache
-_site/
-Gemfile.lock
-**/.ruby-version
-vendor/
+# Hugo
+/public/
+/resources/
+.hugo_build.lock
+
+# misc
 .AppleDouble/
 .env
