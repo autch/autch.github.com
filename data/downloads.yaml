@@ -1,10 +1,21 @@
 - name: windows
   title: Windows アプリケーション
   items:
+    - name: chirami
+      download: https://github.com/autch/chirami/releases/download/v0.1.1-20260728/chirami-v0.1.1-20260728-win64.zip
+      github: autch/chirami
+      description: Windows 10/11 x64 専用の高速軽量な画像ビューア
+    - name: nokomo2
+      github: autch/nokomo2
+      description: KbMedia Player の現仕様プラグインを使う C++ ライブラリと、そのプラグインで各種サウンドファイルを wav へデコードする CLI ツール（のこもDecoder の後継）
+    - name: mml2midfe
+      github: autch/mml2midfe
+      description: MML2MID の Windows 用フロントエンド（WTL 使用）
+      download: ./files/mml2midfe_20061211.zip
     - name: のこもDecoder
-      download: http://autch-online.autch.net/files/NokomoDecode_1.0.0.79_binary.zip
-      source: http://autch-online.autch.net/files/NokomoDecode_1.0.0.79_source.zip
-      description: KbMedia Player のプラグインを利用して，各種サウンドファイルを wav ファイルへデコード
+      download: ./files/NokomoDecode_1.0.0.79_binary.zip
+      source: ./files/NokomoDecode_1.0.0.79_source.zip
+      description: KbMedia Player の旧仕様プラグインを利用して，各種サウンドファイルを wav ファイルへデコード
 - name: kpi
   title: KbMedia Player 用プラグイン
   items:
@@ -25,7 +36,7 @@
       github: autch/kpiffmpeg
       description: 音楽ファイルのデコードを <a href="http://www.ffmpeg.org/">FFmpeg</a> に丸投げして再生
     - name: kpinwa2.kpi
-      download: http://autch-online.autch.net/files/kpinwa2_2.21.zip
+      download: ./files/kpinwa2_2.21.zip
       github: autch/kpinwa2.kpi
       description: Visual Arts 系のゲームの音声・音楽を再生
     - name: kpiadx.kpi
@@ -33,37 +44,76 @@
       github: autch/kpiadx.kpi
       description: CRI ADX フォーマットの音声・音楽を再生
     - name: auPiECE.kpi
-      download: http://autch-online.autch.net/files/auPiECE_kpi-binary-1.11.zip
-      source: http://autch-online.autch.net/files/auPiECE_kpi-source-1.11.zip
+      download: https://github.com/autch/auPiECE.kpi/releases/download/v1.11/auPiECE_kpi-binary-1.11.zip
+      github: autch/auPiECE.kpi
       description: <a href="http://www.piece-me.com/">P/ECE</a> の標準音源（pmd 形式）用プラグイン
     - name: auPPX.kpi
-      download: http://autch-online.autch.net/files/auPPX_kpi-binary-1.04.zip
-      source: http://autch-online.autch.net/files/auPPX_kpi-source-1.04.zip
+      download: ./files/auPPX_kpi-binary-1.04.zip
+      source: ./files/auPPX_kpi-source-1.04.zip
       description: P/ECE の PCM ファイル（ppd, ppg, ppx）用プラグイン
 - name: piece-me
   title: P/ECE 用アプリケーション（実機用）
   items:
     - name: 連射速度測定器
-      download: http://autch-online.autch.net/files/rensha_20030514.zip
+      download: ./files/rensha_20030514.zip
       description: 一発ネタゲーム
     - name: (・∀・)
-      download: http://autch-online.autch.net/files/jien.zip
+      download: ./files/jien.zip
       description: 埋め込みビットマップのサンプル
     - name: pcecircle
-      download: http://autch-online.autch.net/files/pcecircle.zip
+      download: ./files/pcecircle.zip
       description: P/ECE 標準 API で円・楕円を描画
+    - name: fpkplay
+      download: https://github.com/autch/fpkplay/releases/download/v1.0/fpkplay.pex
+      github: autch/fpkplay
+      description: fpk 書庫に収めた muslib 曲ファイルを実機で再生
 - name: piece-windows
   title: P/ECE 用アプリケーション（Windows 用）
   items:
     - name: PFXA
-      download: http://autch-online.autch.net/files/PFXA_20050408.zip
+      download: ./files/PFXA_20050408.zip
       description: グラフィカルな P/ECE 用ファイル転送ソフト
     - name: par
-      download: http://autch-online.autch.net/files/par_20050321.zip
+      download: ./files/par_20050321.zip
       description: P/ECE の fpk 書庫ファイルを作成・展開．P/ECE 用展開ライブラリ libfpk もバンドル
     - name: pieceif.pas
-      download: http://autch-online.autch.net/files/PieceIF.zip
+      download: ./files/PieceIF.zip
       description: pieceif.dll を Delphi から使うためのユニット（Delphi ソース）
+    - name: funpack
+      download: https://github.com/autch/funpack/releases/download/v1.0/funpack.zip
+      github: autch/funpack
+      description: おでかけマルチのアーカイブファイル（LZSS 圧縮）を作成・展開
+- name: piece-dev
+  title: P/ECE 開発ツール・エミュレータ
+  items:
+    - name: piece-toolchain-llvm
+      github: autch/piece-toolchain-llvm
+      description: Clang/LLVM ベースの P/ECE (EPSON S1C33209) 用 C/C++ ツールチェイン。ランタイムライブラリもソースからビルドし、純正 SDK 非依存
+    - name: rust-toolchain-s1c33
+      github: autch/rust-toolchain-s1c33
+      description: P/ECE（EPSON S1C33）向け Rust ツールチェイン
+    - name: piece-emu
+      github: autch/piece-emu
+      description: P/EMU/SDL の実質作り直しで、コンパイラ開発向けの P/ECE 診断用エミュレータ。GDB RSP・セミホスティング・LLDB MCP 対応。フルシステムエミュレータとしてゲームも動作し、libretro コアも同梱
+    - name: P/EMU/SDL
+      github: autch/piemu
+      description: SDL による P/ECE エミュレータ
+    - name: pieceif-libusb
+      download: https://github.com/autch/pieceif-libusb/releases/download/v1.0/pieceif-libusb_37d907c.zip
+      github: autch/pieceif-libusb
+      description: pieceif.dll の libusb への移植
+    - name: mucc
+      github: autch/mucc
+      description: P/ECE 標準音源 muslib の曲データコンパイラ（Un*x 対応版）
+    - name: mucc-next
+      github: autch/mucc-next
+      description: P/ECE 標準音源ドライバ用の改良版コンパイラ
+    - name: pceplayer.js
+      github: autch/pceplayer.js
+      description: JavaScript + Web Audio API による P/ECE 標準音源ドライバの実装
+    - name: piece-pmds
+      github: autch/piece-pmds
+      description: P/ECE 用の自作曲データ集。mucc でコンパイルし、auPiECE.kpi または実機で再生
 - name: kpi-old
   title: KbMedia Player 用プラグイン（古い）
   items:
@@ -76,33 +126,52 @@
       download: https://github.com/autch/kpitak/releases/download/v1.02/kpitak_v1.02.zip
       description: <s><a href="http://www.thbeck.de/Tak/Tak.html">TAK</a> フォーマットの音楽を再生</s> → 本体同梱の kbtak.kpi を推奨
     - name: kpiopus.kpi
-      download: http://autch-online.autch.net/files/kpiopus_1.01.zip
+      download: ./files/kpiopus_1.01.zip
       github: autch/kpiopus
       description: <s><a href="http://opus-codec.org/">Ogg Opus</a> の音楽を再生</s> → 本体同梱の kbopus.kpi を推奨
     - name: kpiWAF.kpi
-      download: http://autch-online.autch.net/files/kpiWAF_1.01.zip
+      download: ./files/kpiWAF_1.01.zip
       description: <a href="http://www.frieve.com/musicstd/">Music Studio シリーズ</a>の WAF フォーマット PCM ファイルを再生
     - name: kpibgmABC.kpi
-      download: http://autch-online.autch.net/files/kpibgmABC_1.02.zip
+      download: ./files/kpibgmABC_1.02.zip
       description: Studio Mebius 系のゲームの音声・音楽を再生
     - name: kpimp4.kpi
-      download: http://autch-online.autch.net/files/kpimp4103.cab
+      download: ./files/kpimp4103.cab
       description: <s>S. Kino. さんによる MPEG4 audio decoder plugin の転載</s> → 本体同梱の kbm4a.kpi を推奨
 - name: java
   title: Javaアプリケーション
   items:
     - name: Androcast
-      download: http://autch-online.autch.net/files/androcast-r15.zip
+      download: ./files/androcast-r15.zip
       github: autch/androcast
       description: <s>クロスプラットフォームな <a href="http://www.android.com/">Android</a> 用スクリーンモニタ</s> → 現在の Android では使えません
+- name: s98
+  title: S98・レトロ PC サウンド
+  items:
+    - name: s98play-plus
+      github: autch/s98play-plus
+      description: S98 ファイルを PC-98 実機で再生（XMS 対応）
+    - name: vgm2s98
+      github: autch/vgm2s98
+      description: VGM ファイルを S98 V3 形式へ変換（OPN(A)・PSG のみ）
+    - name: s98ml
+      github: autch/s98ml
+      description: S98 サウンドダンプ形式を記述する言語とそのコンパイラ・デコンパイラ
+- name: vrchat
+  title: VRChat 関連
+  items:
+    - name: VRC_PopulateScaleAdjusters
+      download: https://github.com/autch/VRC_PopulateScaleAdjusters/releases/download/0.0.1/net.autch.vrchat.populate-scale-adjusters-0.0.1.zip
+      github: autch/VRC_PopulateScaleAdjusters
+      description: 素体の Armature につけた MA Scale Adjuster を服の同名ボーンへコピーするエディタ拡張
 - name: others
   title: その他
   items:
     - name: FMPMD 用リズム音源データ
-      download: http://autch-online.autch.net/files/sc-2608_20020203.zip
+      download: ./files/sc-2608_20020203.zip
       description: FMP/PMD のリズム音源を SC-88Pro のドラムで鳴らす
     - name: VSStyleIndenter
-      download: http://autch-online.autch.net/files/vsstyleindenter.zip
+      download: ./files/vsstyleindenter.zip
       description: <a href="http://www2k.biglobe.ne.jp/~araken/qxw.htm">QX エディタ</a>のインデント動作を Microsoft Visual Studio 互換にする＋おまけ
     - name: GPL に基づき公開された AQUAPLUS 作品
       github: autch/aquaplus_gpl
