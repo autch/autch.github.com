@@ -19,18 +19,26 @@
 - name: kpi
   title: "[KbMedia Player](https://kobarin.sakura.ne.jp/) 用プラグイン"
   items:
-    - name: kpisrla.kpi
-      download: https://github.com/autch/kpisrla.kpi/releases
-      github: autch/kpisrla.kpi
-      description: 可逆圧縮音源 SRLA を再生
+    - name: kpiadx.kpi
+      download: https://github.com/autch/kpiadx.kpi/releases
+      github: autch/kpiadx.kpi
+      description: CRI ADX フォーマットの音声・音楽を再生
+    - name: auPiECE.kpi
+      download: https://github.com/autch/auPiECE.kpi/releases
+      github: autch/auPiECE.kpi
+      description: <a href="https://aquaplus.jp/piece/">P/ECE</a> の標準音源（pmd 形式）用プラグイン
     - name: kpidop.kpi
       download: https://github.com/autch/kpidsd/releases
       github: autch/kpidsd
-      description: DSD 音源を DoP 方式で再生（本体同梱）
+      description: DSD 音源を <a href="https://dsd-guide.com/dop-open-standard">DoP</a> 方式で再生（本体同梱）
     - name: kpid2p.kpi
       download: https://github.com/autch/kpidsd/releases
       github: autch/kpidsd
       description: DSD 音源を PCM に変換して再生（本体同梱）
+    - name: kpisrla.kpi
+      download: https://github.com/autch/kpisrla.kpi/releases
+      github: autch/kpisrla.kpi
+      description: 可逆圧縮音源 SRLA を再生
     - name: kpiffmpeg.kpi
       download: https://github.com/autch/kpiffmpeg/releases
       github: autch/kpiffmpeg
@@ -39,14 +47,6 @@
       download: ./files/kpinwa2_2.21.zip
       github: autch/kpinwa2.kpi
       description: Visual Arts 系のゲームの音声・音楽を再生
-    - name: kpiadx.kpi
-      download: https://github.com/autch/kpiadx.kpi/releases
-      github: autch/kpiadx.kpi
-      description: CRI ADX フォーマットの音声・音楽を再生
-    - name: auPiECE.kpi
-      download: https://github.com/autch/auPiECE.kpi/releases
-      github: autch/auPiECE.kpi
-      description: <a href="http://www.piece-me.com/">P/ECE</a> の標準音源（pmd 形式）用プラグイン
     - name: auPPX.kpi
       download: ./files/auPPX_kpi-binary-1.04.zip
       source: ./files/auPPX_kpi-source-1.04.zip
@@ -94,7 +94,7 @@
       description: P/ECE（EPSON S1C33）向け Rust ツールチェイン
     - name: piece-emu
       github: autch/piece-emu
-      description: P/EMU/SDL の実質作り直しで、コンパイラ開発向けの P/ECE 診断用エミュレータ。GDB RSP・セミホスティング・LLDB MCP 対応。フルシステムエミュレータとしてゲームも動作し、libretro コアも同梱
+      description: P/EMU/SDL の実質作り直し。元はコンパイラ開発向けの診断用エミュだったが、普通にフルシステムエミュレータとしてゲームも動作し、libretro コアも同梱
     - name: P/EMU/SDL
       github: autch/piemu
       description: SDL による P/ECE エミュレータ
@@ -163,7 +163,7 @@
     - name: VRC_PopulateScaleAdjusters
       download: https://github.com/autch/VRC_PopulateScaleAdjusters/releases
       github: autch/VRC_PopulateScaleAdjusters
-      description: 素体の Armature につけた MA Scale Adjuster を服の同名ボーンへコピーするエディタ拡張
+      description: <s>素体の Armature につけた MA Scale Adjuster を服の同名ボーンへコピーするエディタ拡張</s> → <a href="https://github.com/bdunderscore/modular-avatar/releases/tag/1.18.0">Modular Avatar 1.18.0</a> から不要
 - name: others
   title: その他
   items:
