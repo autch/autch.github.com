@@ -17,7 +17,7 @@
       source: ./files/NokomoDecode_1.0.0.79_source.zip
       description: KbMedia Player の旧仕様プラグインを利用して，各種サウンドファイルを wav ファイルへデコード
 - name: kpi
-  title: KbMedia Player 用プラグイン
+  title: "[KbMedia Player](https://kobarin.sakura.ne.jp/) 用プラグイン"
   items:
     - name: kpisrla.kpi
       download: https://github.com/autch/kpisrla.kpi/releases
@@ -52,7 +52,7 @@
       source: ./files/auPPX_kpi-source-1.04.zip
       description: P/ECE の PCM ファイル（ppd, ppg, ppx）用プラグイン
 - name: piece-me
-  title: P/ECE 用アプリケーション（実機用）
+  title: "[P/ECE](https://aquaplus.jp/piece/) 用アプリケーション（実機用）"
   items:
     - name: 連射速度測定器
       download: ./files/rensha_20030514.zip
@@ -68,7 +68,7 @@
       github: autch/fpkplay
       description: fpk 書庫に収めた muslib 曲ファイルを実機で再生
 - name: piece-windows
-  title: P/ECE 用アプリケーション（Windows 用）
+  title: "[P/ECE](https://aquaplus.jp/piece/) 用アプリケーション（ホストPC用）"
   items:
     - name: PFXA
       download: ./files/PFXA_20050408.zip
@@ -84,7 +84,7 @@
       github: autch/funpack
       description: おでかけマルチのアーカイブファイル（LZSS 圧縮）を作成・展開
 - name: piece-dev
-  title: P/ECE 開発ツール・エミュレータ
+  title: "[P/ECE](https://aquaplus.jp/piece/) 開発ツール・エミュレータ"
   items:
     - name: piece-toolchain-llvm
       github: autch/piece-toolchain-llvm
@@ -115,7 +115,7 @@
       github: autch/piece-pmds
       description: P/ECE 用の自作曲データ集。mucc でコンパイルし、auPiECE.kpi または実機で再生
 - name: kpi-old
-  title: KbMedia Player 用プラグイン（古い）
+  title: "[KbMedia Player](https://kobarin.sakura.ne.jp/) 用プラグイン（古い）"
   items:
     - name: kpipxtone.kpi
       download: https://github.com/autch/kpipxtone/releases

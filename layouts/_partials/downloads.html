@@ -1,5 +1,5 @@
 {{ range hugo.Data.downloads }}
-<h2 id="{{ .name }}">{{ .title }}</h2>
+<h2 id="{{ .name }}">{{ .title | markdownify }}</h2>
 <div class="card-grid">
   {{ range .items }}
   <div class="card">
@@ -7,7 +7,7 @@
       <h3 class="card-title">
         {{ if .github }}<a href="https://github.com/{{ .github }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
       </h3>
-      <p class="card-desc">{{ .description | safeHTML }}</p>
+      <p class="card-desc">{{ .description | markdownify }}</p>
     </div>
     <div class="card-actions">
       {{ with .github }}
