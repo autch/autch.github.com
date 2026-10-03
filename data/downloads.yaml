@@ -2,7 +2,7 @@
   title: Windows アプリケーション
   items:
     - name: chirami
-      download: https://github.com/autch/chirami/releases/download/v0.1.1-20260728/chirami-v0.1.1-20260728-win64.zip
+      download: https://github.com/autch/chirami/releases
       github: autch/chirami
       description: Windows 10/11 x64 専用の高速軽量な画像ビューア
     - name: nokomo2
@@ -20,19 +20,19 @@
   title: KbMedia Player 用プラグイン
   items:
     - name: kpisrla.kpi
-      download: https://github.com/autch/kpisrla.kpi/releases/download/v1.0/kpisrla_1.0.zip
+      download: https://github.com/autch/kpisrla.kpi/releases
       github: autch/kpisrla.kpi
       description: 可逆圧縮音源 SRLA を再生
     - name: kpidop.kpi
-      download: https://github.com/autch/kpidsd/releases/download/kpidop-v2.0.1/kpidop_2.0.1.zip
+      download: https://github.com/autch/kpidsd/releases
       github: autch/kpidsd
       description: DSD 音源を DoP 方式で再生（本体同梱）
     - name: kpid2p.kpi
-      download: https://github.com/autch/kpidsd/releases/download/kpid2p-v1.0.0/kpid2p_1.0.0.zip
+      download: https://github.com/autch/kpidsd/releases
       github: autch/kpidsd
       description: DSD 音源を PCM に変換して再生（本体同梱）
     - name: kpiffmpeg.kpi
-      download: https://github.com/autch/kpiffmpeg/releases/download/v1.0.0/kpiffmpeg_v1.0.0.zip
+      download: https://github.com/autch/kpiffmpeg/releases
       github: autch/kpiffmpeg
       description: 音楽ファイルのデコードを <a href="http://www.ffmpeg.org/">FFmpeg</a> に丸投げして再生
     - name: kpinwa2.kpi
@@ -40,11 +40,11 @@
       github: autch/kpinwa2.kpi
       description: Visual Arts 系のゲームの音声・音楽を再生
     - name: kpiadx.kpi
-      download: https://github.com/autch/kpiadx.kpi/releases/download/v2.00/kpiadx_v2.0.zip
+      download: https://github.com/autch/kpiadx.kpi/releases
       github: autch/kpiadx.kpi
       description: CRI ADX フォーマットの音声・音楽を再生
     - name: auPiECE.kpi
-      download: https://github.com/autch/auPiECE.kpi/releases/download/v1.11/auPiECE_kpi-binary-1.11.zip
+      download: https://github.com/autch/auPiECE.kpi/releases
       github: autch/auPiECE.kpi
       description: <a href="http://www.piece-me.com/">P/ECE</a> の標準音源（pmd 形式）用プラグイン
     - name: auPPX.kpi
@@ -64,7 +64,7 @@
       download: ./files/pcecircle.zip
       description: P/ECE 標準 API で円・楕円を描画
     - name: fpkplay
-      download: https://github.com/autch/fpkplay/releases/download/v1.0/fpkplay.pex
+      download: https://github.com/autch/fpkplay/releases
       github: autch/fpkplay
       description: fpk 書庫に収めた muslib 曲ファイルを実機で再生
 - name: piece-windows
@@ -80,7 +80,7 @@
       download: ./files/PieceIF.zip
       description: pieceif.dll を Delphi から使うためのユニット（Delphi ソース）
     - name: funpack
-      download: https://github.com/autch/funpack/releases/download/v1.0/funpack.zip
+      download: https://github.com/autch/funpack/releases
       github: autch/funpack
       description: おでかけマルチのアーカイブファイル（LZSS 圧縮）を作成・展開
 - name: piece-dev
@@ -99,7 +99,7 @@
       github: autch/piemu
       description: SDL による P/ECE エミュレータ
     - name: pieceif-libusb
-      download: https://github.com/autch/pieceif-libusb/releases/download/v1.0/pieceif-libusb_37d907c.zip
+      download: https://github.com/autch/pieceif-libusb/releases
       github: autch/pieceif-libusb
       description: pieceif.dll の libusb への移植
     - name: mucc
@@ -118,12 +118,12 @@
   title: KbMedia Player 用プラグイン（古い）
   items:
     - name: kpipxtone.kpi
-      download: https://github.com/autch/kpipxtone/releases/download/v1.2/kpipxtone_v1.2.zip
+      download: https://github.com/autch/kpipxtone/releases
       github: autch/kpipxtone
       description: <s><a href="http://hp.vector.co.jp/authors/VA022293/">ピストンコラージュ</a> の音楽を再生</s> → 本体同梱の kbpxtone.kpi を推奨
     - name: kpitak.kpi
       github: autch/kpitak
-      download: https://github.com/autch/kpitak/releases/download/v1.02/kpitak_v1.02.zip
+      download: https://github.com/autch/kpitak/releases
       description: <s><a href="http://www.thbeck.de/Tak/Tak.html">TAK</a> フォーマットの音楽を再生</s> → 本体同梱の kbtak.kpi を推奨
     - name: kpiopus.kpi
       download: ./files/kpiopus_1.01.zip
@@ -161,7 +161,7 @@
   title: VRChat 関連
   items:
     - name: VRC_PopulateScaleAdjusters
-      download: https://github.com/autch/VRC_PopulateScaleAdjusters/releases/download/0.0.1/net.autch.vrchat.populate-scale-adjusters-0.0.1.zip
+      download: https://github.com/autch/VRC_PopulateScaleAdjusters/releases
       github: autch/VRC_PopulateScaleAdjusters
       description: 素体の Armature につけた MA Scale Adjuster を服の同名ボーンへコピーするエディタ拡張
 - name: others
